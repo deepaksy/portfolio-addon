@@ -9,7 +9,7 @@ startup: "application"
 boot: "auto"
 image: "deepaksy/portfolio-backend-app:latest"
 ports:
-  7987/tcp: 8000
+  8000/tcp: 7987
 options:
   debug: false
 map:
