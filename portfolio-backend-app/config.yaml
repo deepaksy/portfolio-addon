@@ -5,10 +5,10 @@ description: "Custom Backend app"
 arch:
   - aarch64
   - amd64
-  - aarch64
+  - arm64
 startup: "application"
 boot: "auto"
-image: "ghcr.io/deepaksy/{arch}-portfolio-addon"
+image: "ghcr.io/deepaksy/portfolio-addon-{arch}"
 ports:
   8000/tcp: 7987
 options:
