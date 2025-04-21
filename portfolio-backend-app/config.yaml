@@ -3,6 +3,7 @@ version: "1.0.0"
 slug: portfolio-backend-app
 description: "Custom Backend app"
 arch:
+  - aarch64
   - amd64
   - aarch64
 startup: "application"
