@@ -4,10 +4,10 @@ slug: portfolio-backend-app
 description: "Custom Backend app"
 arch:
   - amd64
-  - arm64
+  - aarch64
 startup: "application"
 boot: "auto"
-image: "deepaksy/portfolio-backend-app:latest"
+image: "docker.io/deepaksy/portfolio-backend-app:latest"
 ports:
   8000/tcp: 7987
 options:
