@@ -7,7 +7,7 @@ arch:
   - aarch64
 startup: "application"
 boot: "auto"
-image: "ghcr.io/deepaksy/portfolio-backend-app:latest"
+image: "ghcr.io/deepaksy/portfolio-backend-app-{arch}:latest"
 ports:
   8000/tcp: 7987
 options:
