@@ -12,17 +12,8 @@ ports:
   8000/tcp: 7987
 options:
   debug: false
-map:
-  - type: addon_config
-    read_only: false
-options:
-  db_user: ""
-  db_pass: ""
-
 schema:
-  db_user: str
-  db_pass: password
+  debug: bool
+map:
+  - config:rw
 
-environment:
-  DB_USER: !env_var db_user
-  DB_PASS: !env_var db_pass
