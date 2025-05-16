@@ -1,0 +1,5 @@
+build:
+  context: .
+  dockerfile: Dockerfile
+  args:
+    BUILD_FROM: ghcr.io/home-assistant/{arch}-base
