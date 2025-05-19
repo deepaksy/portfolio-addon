@@ -17,4 +17,5 @@ schema:
 map:
   - config:rw
   - addon_config:rw
+logo: https://raw.githubusercontent.com/deepaksy/portfolio-addon/main/portfolio-backend-app-go/images/gear.png
 
