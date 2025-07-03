@@ -1,6 +1,8 @@
 name: "MySQL Server"
+description: "Custom MySQL server addon"
+version: "1.0.1"
 slug: mysql_addon
-version: "1.0.2"
+url: "https://github.com/deepaksy/portfolio-addon"
 image: "mysql"
 arch: [amd64, aarch64]
 startup: services
