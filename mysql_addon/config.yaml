@@ -1,0 +1,22 @@
+name: "MySQL Server"
+version: "1.0"
+slug: "mysql_addon"
+arch:
+  - amd64
+  - aarch64
+  - armv7
+init: false
+startup: services
+ports:
+  3306/tcp: "{{port}}"
+options:
+  port: 3306
+  root_password: "admin"
+schema:
+  port: int
+  root_password: str
+map:
+  - data
+
+
+backup: cold
