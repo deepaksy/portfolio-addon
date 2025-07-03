@@ -1,5 +1,5 @@
 name: "MySQL Server"
-description: "Custom MySQL server as Home Assistant add‑on"
+description: "Custom MySQL server addon"
 version: "1.0.1"
 slug: mysql_addon
 url: "https://github.com/deepaksy/portfolio-addon"
@@ -9,12 +9,19 @@ arch:
 init: false
 startup: services
 boot: "auto"
+
 ports:
   "3306/tcp": 3306
+
 options:
+  port: 3306
   root_password: "admin"
+
 schema:
+  port: port
   root_password: str
+
 map:
   - data
+
 backup: cold
