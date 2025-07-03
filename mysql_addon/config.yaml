@@ -1,13 +1,14 @@
-name: MySQL Server
-description: "Custom MySQL server as Home Assistant add-on"
-version: "1.0"
+name: "MySQL Server"
+description: "Custom MySQL server as Home Assistant add‑on"
+version: "1.0.1"
 slug: mysql_addon
+url: "https://github.com/deepaksy/portfolio-addon"
 arch:
   - amd64
   - aarch64
-  - armv7
 init: false
 startup: services
+boot: "auto"  # optional
 ports:
   3306/tcp: "{{ port }}"
 options:
@@ -18,4 +19,6 @@ schema:
   root_password: str
 map:
   - data
+  - addon_config:rw
 backup: cold
+# apparmor.txt: include for stricter security
