@@ -1,6 +1,6 @@
-name: "MySQL Server"
-version: "1.0"
-slug: "mysql_addon"
+name: MySQL Server
+version: 1.0
+slug: mysql_addon
 arch:
   - amd64
   - aarch64
