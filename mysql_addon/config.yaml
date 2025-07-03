@@ -8,17 +8,13 @@ arch:
   - aarch64
 init: false
 startup: services
-boot: "auto"  # optional
+boot: "auto"
 ports:
-  3306/tcp: "{{ port }}"
+  "3306/tcp": 3306
 options:
-  port: 3306
   root_password: "admin"
 schema:
-  port: int
   root_password: str
 map:
   - data
-  - addon_config:rw
 backup: cold
-# apparmor.txt: include for stricter security
