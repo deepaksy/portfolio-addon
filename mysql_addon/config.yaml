@@ -3,7 +3,7 @@ description: "Custom MySQL server addon"
 version: "1.0.1"
 slug: mysql_addon
 url: "https://github.com/deepaksy/portfolio-addon"
-image: "mysql"
+image: "mysql:lts"
 arch: [amd64, aarch64]
 startup: services
 boot: auto
