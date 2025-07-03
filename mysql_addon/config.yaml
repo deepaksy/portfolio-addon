@@ -1,5 +1,6 @@
 name: MySQL Server
-version: 1.0
+description: "Custom MySQL server as Home Assistant add-on"
+version: "1.0"
 slug: mysql_addon
 arch:
   - amd64
@@ -8,7 +9,7 @@ arch:
 init: false
 startup: services
 ports:
-  3306/tcp: "{{port}}"
+  3306/tcp: "{{ port }}"
 options:
   port: 3306
   root_password: "admin"
@@ -17,6 +18,4 @@ schema:
   root_password: str
 map:
   - data
-
-
 backup: cold
