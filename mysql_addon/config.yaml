@@ -1,26 +1,21 @@
 name: "MySQL Server"
 description: "Custom MySQL server add-on"
-version: "1.0.2"
+version: "1.0.1"
 slug: mysql_addon
 url: "https://github.com/deepaksy/portfolio-addon"
-image: "mysql:8.0"  # valid tag
+image: mysql/mysql-server:8.0
 arch:
+  - amd64
   - aarch64
 startup: services
 boot: auto
-
 ports:
   "3306/tcp": 3306
-
 options:
   port: 3306
   root_password: "admin"
-
 schema:
   port: port
   root_password: str
-
 map:
   - data
-
-backup: cold
