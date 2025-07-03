@@ -1,12 +1,10 @@
 name: "MySQL Server"
-description: "Custom MySQL server add-on"
+description: "Custom MySQL server addon"
 version: "1.0.1"
 slug: mysql_addon
 url: "https://github.com/deepaksy/portfolio-addon"
-image: mysql/mysql-server:8.0
-arch:
-  - amd64
-  - aarch64
+image: "ghcr.io/linuxserver/mysql:8.0"
+arch: [amd64, aarch64]
 startup: services
 boot: auto
 ports:
